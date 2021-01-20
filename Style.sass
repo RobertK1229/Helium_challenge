@@ -2,20 +2,18 @@ body
   background: url("Images/Page_background/bg-pattern-bottom-desktop.svg"), url("Images/Page_background/bg-pattern-top-desktop.svg")
   min-height: 100%
 
-.content_flex
-  display: flex
+.content-grid
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: auto 300px
+  grid-gap: 40px
+  max-width: 60%
+  margin: 0 auto
   border: 3px solid red
 
-.content_flex > div
-  border: 3px solid blue
-
-#quote
-  float: left
-  width: 50%
-
-#ratings
-  float: right
-  width: 50%
-
-#reviews
-  float: bottom
+.content-grid > div
+  text-align: center
+  padding: 20px
+    
+.flex-container
+  display: flex

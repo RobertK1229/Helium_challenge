@@ -3,27 +3,23 @@ body {
   min-height: 100%;
 }
 
-.content_flex {
-  display: flex;
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 300px;
+  grid-gap: 40px;
+  max-width: 60%;
+  margin: 0 auto;
   border: 3px solid red;
 }
 
-.content_flex > div {
-  border: 3px solid blue;
+.content-grid > div {
+  text-align: center;
+  padding: 20px;
 }
 
-#quote {
-  float: left;
-  width: 50%;
-}
-
-#ratings {
-  float: right;
-  width: 50%;
-}
-
-#reviews {
-  float: bottom;
+.flex-container {
+  display: flex;
 }
 
 /*# sourceMappingURL=Style.css.map */

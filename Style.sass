@@ -6,28 +6,38 @@ body
   justify-content: center
   align-items: center
 
-.content-grid
-  display: grid
-  grid-template-columns: 1fr 1fr
-  grid-template-rows: auto 300px
-  grid-gap: 40px
-  margin: 0 auto
-  max-width: 75%
-  border: 2px red solid
-
-//.content-grid > div
-//  padding: 15px
-
 #hook
   color: #502050
   line-height: 1.1
   font-weight: 700
   font-size: 50px
-    
-.flex-container
+
+.content-grid
+  display: grid
+  grid-template-rows: 1fr 1fr
+  max-width: 75%
+  border: 2px red solid
+
+#right > div
+  background: hsl(300, 24%, 96%)
+  padding-top: 3%
+  text-align: center
+  display: inline-block
+  min-width: 80%
+  border-radius: 4%
+
+.rating-grid
+  display: grid
+  grid-template-columns: 30px 30px 30px 30px 30px auto
+
+.top
+  display: grid
+  grid-template-columns: 1fr 1fr
+
+.bottom
   display: flex
 
-.flex-container > div
+.bottom > div
   font-size: 15px
   color: whitesmoke
   background: hsl(300, 43%, 22%)

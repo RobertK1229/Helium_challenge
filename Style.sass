@@ -18,17 +18,19 @@ body
   max-width: 75%
   border: 2px red solid
 
+.rating-grid
+  display: grid
+  grid-template-columns: 30px 30px 30px 30px 30px auto
+
+#right
+  padding: 3% 0 0 0
+
 #right > div
   background: hsl(300, 24%, 96%)
-  padding-top: 3%
   text-align: center
   display: inline-block
   min-width: 80%
   border-radius: 4%
-
-.rating-grid
-  display: grid
-  grid-template-columns: 30px 30px 30px 30px 30px auto
 
 .top
   display: grid
@@ -36,9 +38,15 @@ body
 
 .bottom
   display: flex
+  height: 100%
+  padding: 0 60px 0 0
+  justify-content: space-between
+  align-items: center
 
 .bottom > div
   font-size: 15px
+  height: 25vh
+  width: 20vw
   color: whitesmoke
   background: hsl(300, 43%, 22%)
   border-radius: 4%

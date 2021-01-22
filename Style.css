@@ -1,3 +1,8 @@
+@media screen and (max-width: 1440px) {
+  .review {
+    width: 100%;
+  }
+}
 body {
   background: url("Images/Page_background/bg-pattern-bottom-desktop.svg"), url("Images/Page_background/bg-pattern-top-desktop.svg");
   font-family: Spartan, sans-serif;
@@ -7,14 +12,7 @@ body {
   align-items: center;
 }
 
-#hook {
-  color: #502050;
-  line-height: 1.1;
-  font-weight: 700;
-  font-size: 50px;
-}
-
-.content-grid {
+.Content-grid {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-gap: 60px;
@@ -22,53 +20,76 @@ body {
   border: 2px red solid;
 }
 
-.rating-grid {
-  display: grid;
-  grid-template-columns: 30px 30px 30px 30px 30px auto;
-}
-
-#right-content {
-  padding: 3% 0 0 0;
-}
-
-#right-content > div {
-  background: #f7f2f7;
-  text-align: center;
-  display: inline-block;
-  min-width: 80%;
-  border-radius: 4%;
-}
-
-.top-content {
+.Top-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.review {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+#left {
+  font-size: 20px;
 }
 
-.bottom-content {
+#hook {
+  color: #502050;
+  line-height: 1.1;
+  font-weight: 700;
+  font-size: 70px;
+}
+
+#right-content {
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
-  padding: 0 60px 0 0;
+  padding: 3% 0 0 0;
   justify-content: space-between;
+}
+
+#right-content > div {
+  background: #f7f2f7;
+  padding: 3% 0 3% 0;
+  text-align: center;
+  display: inline-block;
+  min-width: 80%;
+  border-radius: 5%;
+}
+
+.Rating-grid {
+  display: grid;
+  grid-template-columns: 30px 30px 30px 30px 30px auto;
+}
+
+.Bottom-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5px;
+  height: 100%;
   align-items: center;
 }
 
-.bottom-content > div {
-  font-size: 15px;
-  height: 25vh;
-  width: 20vw;
-  color: whitesmoke;
+.Verified-review {
   background: #502050;
-  border-radius: 4%;
+  display: inline-block;
+  font-size: 15px;
+  padding: 30px 25px 30px 25px;
+  max-width: 15vw;
+  height: auto;
+  color: whitesmoke;
+  border-radius: 3%;
 }
 
-.portrait {
-  max-width: 15%;
+.User-name {
+  font-weight: 700;
+}
+
+.Review-content {
+  display: block;
+  padding-top: 55px;
+}
+
+.Portrait {
+  vertical-align: middle;
+  float: left;
+  margin-right: 2rem;
+  max-width: 4vh;
   height: auto;
   border-radius: 50%;
 }

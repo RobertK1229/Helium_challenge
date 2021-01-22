@@ -15,6 +15,7 @@ body
 .content-grid
   display: grid
   grid-template-rows: 1fr 1fr
+  grid-gap: 60px
   max-width: 75%
   border: 2px red solid
 
@@ -22,28 +23,34 @@ body
   display: grid
   grid-template-columns: 30px 30px 30px 30px 30px auto
 
-#right
+#right-content
   padding: 3% 0 0 0
 
-#right > div
+#right-content > div
   background: hsl(300, 24%, 96%)
+  //padding: 3% 0 3% 0
   text-align: center
   display: inline-block
   min-width: 80%
   border-radius: 4%
 
-.top
+.top-content
   display: grid
   grid-template-columns: 1fr 1fr
 
-.bottom
+.review
+  display: grid
+  grid-template-rows: 1fr 1fr
+
+.bottom-content
   display: flex
+  flex-wrap: wrap
   height: 100%
   padding: 0 60px 0 0
   justify-content: space-between
   align-items: center
 
-.bottom > div
+.bottom-content > div
   font-size: 15px
   height: 25vh
   width: 20vw

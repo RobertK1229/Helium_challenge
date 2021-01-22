@@ -1,7 +1,3 @@
-@media screen and (max-width: 1440px)
-  .review
-    width: 100%
-
 body
   background: url("Images/Page_background/bg-pattern-bottom-desktop.svg"), url("Images/Page_background/bg-pattern-top-desktop.svg")
   font-family: Spartan, sans-serif
@@ -10,12 +6,19 @@ body
   justify-content: center
   align-items: center
 
+@media screen and (max-width: 375px)
+  .body
+    width: 100%
+
+@media screen and (min-width: 1440px)
+  .body
+    width: 100%
+
 .Content-grid
   display: grid
   grid-template-rows: 1fr 1fr
   grid-gap: 60px
   max-width: 75%
-  border: 2px red solid
 
 //This is for the top half of the content that is seen on the grid
 .Top-content
@@ -32,40 +35,52 @@ body
   font-size: 70px
 
 #right-content
-  display: flex
-  flex-wrap: wrap
+  display: grid
+  grid-template-rows: 1fr 1fr 1fr
   padding: 3% 0 0 0
-  justify-content: space-between
+  //justify-content: space-between
 
-#right-content > div
+.Rating
   background: hsl(300, 24%, 96%)
-  padding: 3% 0 3% 0
+  padding: 3% 0 0 0
   text-align: center
   display: inline-block
-  min-width: 80%
+  max-width: 80%
   border-radius: 5%
 
-.Rating-grid
-  display: grid
-  grid-template-columns: 30px 30px 30px 30px 30px auto
+.Rating:nth-of-type(even)
+  left: 50px
+  position: relative
+
+.Rating:nth-child(3)
+  left: 100px
+  position: relative
 
 //This is for the bottom half of the content that is seen on the grid
 .Bottom-content
   display: grid
   grid-template-columns: 1fr 1fr 1fr
-  grid-gap: 0.5px
-  height: 100%
+  height: 90%
+  grid-gap: 20px
   align-items: center
 
 .Verified-review
   background: hsl(300, 43%, 22%)
   display: inline-block
-  font-size: 15px
+  font-size: 1em
   padding: 30px 25px 30px 25px
-  max-width: 15vw
+  max-width: 18vw
   height: auto
   color: whitesmoke
   border-radius: 3%
+
+.Verified-review:nth-of-type(even)
+  top: 20px
+  position: relative
+
+.Verified-review:nth-child(3)
+  top: 40px
+  position: relative
 
 .User-name
   font-weight: 700
@@ -78,6 +93,6 @@ body
   vertical-align: middle
   float: left
   margin-right: 2rem
-  max-width: 4vh
+  max-width: 18%
   height: auto
   border-radius: 50%
